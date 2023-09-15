@@ -1,4 +1,4 @@
-name: Rails Test
+name: test
 
 on:
   push:
