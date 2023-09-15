@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["rails", "server"]
+CMD ["rails", "test"]
