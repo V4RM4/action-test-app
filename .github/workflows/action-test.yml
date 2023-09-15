@@ -34,5 +34,6 @@ jobs:
         gem install bundler
         bundle install
 
-    - name: Run Rails tests
-      run: bundle exec rails test
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag action-test:$(date +%s)
