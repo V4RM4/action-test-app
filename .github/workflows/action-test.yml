@@ -1,3 +1,4 @@
+# name: docker image build and run test
 name: docker image build test
 
 on:
@@ -38,3 +39,4 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build -t action-test-app .
+        echo ${{ github.sha }}}
